@@ -1,6 +1,6 @@
 # 🤖 ReFlex: The Teleoperated Robot Hand 
 
-##📦 Materials
+## 📦 Materials
   Arduino Uno 
   Forse Sensitive Resistors (FSRs)
   Work Glove
