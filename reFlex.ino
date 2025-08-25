@@ -1,32 +1,22 @@
-#include <Servo.h>
+#include <Stepper.h>
 
-Servo finger;
-const int servoPin = 9;
+// 28BYJ-48 has 2048 steps per revolution (with gearbox)
+const int stepsPerRevolution = 2048;
 
-const int openAngle  = 0;    // Pulley in open position—
-const int closeAngle = 100;  // Adjust until finger fully closes comfortably
-
-const int stepDeg    = 2;     // Smaller angle steps = smoother motion
-const int stepDelay  = 20;    // ms delay between steps (tweak for smoothness)
+// connect motor control pins to Arduino
+Stepper myStepper(stepsPerRevolution, 8, 10, 9, 11);
 
 void setup() {
-  finger.attach(servoPin);
-  finger.write(openAngle);
-  delay(500);  // Let it settle
+  myStepper.setSpeed(10); // RPM (try 10 first)
+  Serial.begin(9600);
 }
 
 void loop() {
-  // --- Rotate CCW to close (openAngle → closeAngle) ---
-  for (int a = openAngle; a <= closeAngle; a += stepDeg) {
-    finger.write(a);
-    delay(stepDelay);
-  }
-  delay(800); // Hold closed briefly
+  Serial.println("Clockwise");
+  myStepper.step(stepsPerRevolution);  // one full revolution
+  delay(1000);
 
-  // --- Rotate CW to open (closeAngle → openAngle) ---
-  for (int a = closeAngle; a >= openAngle; a -= stepDeg) {
-    finger.write(a);
-    delay(stepDelay);
-  }
-  delay(800); // Hold open briefly
+  Serial.println("Counterclockwise");
+  myStepper.step(-stepsPerRevolution); // one full revolution back
+  delay(1000);
 }
