@@ -16,7 +16,7 @@ void setup() {
   unsigned long startTime = millis();
 
   // Pull finger down for 20s
-  while (millis() - startTime < 20000) {
+  while (millis() - startTime < 27000) {
     stepper.step(-1);  // negative = pull down
   }
 
@@ -34,8 +34,4 @@ void setup() {
   while (true) {
     // do nothing
   }
-}
-
-void loop() {
-  // nothing here
 }
