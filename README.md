@@ -1,4 +1,4 @@
-# 🦾 ReFlex: The Teleoperated Robot Hand 
+# 🦾 ReFlex: The Teleoperated Hand 
 
 ## 📦 Materials
   Arduino Uno 
