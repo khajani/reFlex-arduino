@@ -1,5 +1,5 @@
 # 🦾 ReFlex: The Teleoperated Hand 
-ReFlex is a teleoperated robotic hand project where a wooden hand mimics the real-time finger movements of the user. By wearing a sensor glove equipped with flex sensors, the bending of each finger is captured and translated into proportional movements of the wooden hand through a string-and-elastic mechanism that mimics the biomechanics of how tendons pull fingers closed and ligaments restore them
+ReFlex is a **teleoperated robotic hand** project where a wooden hand mimics the real-time finger movements of the user. By wearing a sensor glove equipped with flex sensors, the bending of each finger is captured and translated into proportional movements of the wooden hand through a string-and-elastic mechanism that mimics the biomechanics of how tendons pull fingers closed and ligaments restore them
 
 ## ⚙️ How It Works
 
@@ -9,11 +9,11 @@ ReFlex is a teleoperated robotic hand project where a wooden hand mimics the rea
 4. Stepper motors pull strings attached to each finger tip running down the fingers of the IKEA wooden hand
 5. Elastic bands restore the fingers to their neutral position when the user releases
 
-    This string–elastic combo functions like human tendons and ligaments:
+    This string–elastic combo **functions like human tendons and ligaments**:
     - The strings act as flexor tendons, pulling fingers closed.
     - The elastic bands mimic extensor ligaments, returning fingers to rest.
 
-This allows the wooden hand to mirror human finger biomechanics in real time.
+This allows the wooden hand to **mirror human finger biomechanics in real time**.
 
 ## 📦 Materials
   Arduino Uno 
