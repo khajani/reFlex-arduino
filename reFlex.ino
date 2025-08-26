@@ -1,22 +1,41 @@
 #include <Stepper.h>
+// 28BYJ-48 has 2048 steps per full revolution (in half-step mode)
+const int STEPS_PER_REV = 2048;
 
-// 28BYJ-48 has 2048 steps per revolution (with gearbox)
-const int stepsPerRevolution = 2048;
+// ULN2003 pins
+const int IN1 = 8;
+const int IN2 = 9;
+const int IN3 = 10;
+const int IN4 = 11;
 
-// connect motor control pins to Arduino
-Stepper myStepper(stepsPerRevolution, 8, 10, 9, 11);
+Stepper stepper(STEPS_PER_REV, IN1, IN3, IN2, IN4);
 
 void setup() {
-  myStepper.setSpeed(10); // RPM (try 10 first)
-  Serial.begin(9600);
+  stepper.setSpeed(10);  // motor speed (RPM)
+
+  unsigned long startTime = millis();
+
+  // Pull finger down for 20s
+  while (millis() - startTime < 20000) {
+    stepper.step(-1);  // negative = pull down
+  }
+
+  delay(500);  // short pause
+
+  // Reset timer
+  startTime = millis();
+
+  // Release finger up for 20s
+  while (millis() - startTime < 20000) {
+    stepper.step(1);  // positive = release up
+  }
+
+  // Stop forever
+  while (true) {
+    // do nothing
+  }
 }
 
 void loop() {
-  Serial.println("Clockwise");
-  myStepper.step(stepsPerRevolution);  // one full revolution
-  delay(1000);
-
-  Serial.println("Counterclockwise");
-  myStepper.step(-stepsPerRevolution); // one full revolution back
-  delay(1000);
+  // nothing here
 }
