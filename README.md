@@ -3,13 +3,17 @@ ReFlex is a teleoperated robotic hand project where a wooden hand mimics the rea
 
 ## ⚙️ How It Works
 
-- The user wears a work glove fitted with flex sensors on each finger
-- Finger bending changes the resistance of the sensors, which is read by the Arduino Uno
-- The Arduino maps these readings to motor rotations
-- Stepper motors pull strings attached to the IKEA wooden hand’s fingers, making the fingers close
-- Elastic bands restore the fingers to their neutral positions
+1. The user wears a glove fitted with flex sensors on each finger
+2. Finger bending changes the sensor resistance, which is read by the Arduino Uno
+3. These readings are mapped to motor rotations
+4. Stepper motors pull strings attached to each finger tip running down the fingers of the IKEA wooden hand
+5. Elastic bands restore the fingers to their neutral position when the user releases
 
-This allows the wooden hand to mirror the user’s finger motions in real time.
+    This string–elastic combo functions like human tendons and ligaments:
+    - The strings act as flexor tendons, pulling fingers closed.
+    - The elastic bands mimic extensor ligaments, returning fingers to rest.
+
+This allows the wooden hand to mirror human finger biomechanics in real time.
 
 ## 📦 Materials
   Arduino Uno 
