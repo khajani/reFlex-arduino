@@ -40,17 +40,20 @@ This allows the wooden hand to **mirror human finger biomechanics in real time**
 
 The system involves two main parts:
 
-**Glove Circuit:**
+**🧤 Glove Circuit:**
 
-Flex sensors connected in a voltage divider configuration
+- Flex sensor + 10 kΩ resistor form voltage divider configuration   
+  - <img width="295" height="86" alt="image" src="https://github.com/user-attachments/assets/dfcecd2a-2d58-480f-abeb-206eb3164931" />   
+- Analog inputs on Arduino read finger bending   
 
-Analog inputs on Arduino read finger bending
+**✋ Hand Circuit:**
 
-**Hand Circuit:**
+- Stepper motor driven by ULN2003 driver   
+- Arduino digital pins send control signals   
+- Shared 5 V & GND   
 
-Stepper motors connected to ULN2003 drivers
-
-Motor drivers receive control signals from Arduino digital pins
+**Signal Flow:** 
+Finger bend → Sensor → Arduino → Driver → Motor
   
 ## 🔮 Future Improvements
 - Design a 3D-printed hand for higher dexterity and cleaner design
