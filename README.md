@@ -34,5 +34,26 @@ This allows the wooden hand to **mirror human finger biomechanics in real time**
   - Elastic Bands   
   - Hot Glue   
   - Paper Straw   
-  - Zip-tie   
+  - Zip-tie
+
+## 🔌 Wiring & Circuit Diagram
+
+The system involves two main parts:
+
+**Glove Circuit:**
+
+Flex sensors connected in a voltage divider configuration
+
+Analog inputs on Arduino read finger bending
+
+**Hand Circuit:**
+
+Stepper motors connected to ULN2003 drivers
+
+Motor drivers receive control signals from Arduino digital pins
   
+## 🔮 Future Improvements
+- Design a 3D-printed hand for higher dexterity and cleaner design
+- Improve finger actuation with stronger mechanism
+- Implement more stepper motors
+- Explore force feedback for haptics
