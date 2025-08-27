@@ -57,6 +57,8 @@ The system involves two main parts:
 
 **Signal Flow:** 
 Finger bend → Sensor → Arduino → Driver → Motor
+
+<img width="1528" height="641" alt="Brave Trug-Blad" src="https://github.com/user-attachments/assets/7368b0b5-a886-48d5-b3a8-09651e5b12e4" />
   
 ## 🔮 Future Improvements
 - Design a 3D-printed hand for higher dexterity and cleaner design
