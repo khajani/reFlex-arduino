@@ -3,10 +3,10 @@ ReFlex is a **teleoperated robotic hand** project where a wooden hand mimics the
 
 ## 🚀 Features
  
- -🦾 Real-time teleoperation of a robotic hand   
- -🩺 Biomechanics-inspired tendon–ligament mechanism   
- -💵 Low-cost prototype using accessible materials   
- -💫 Expandable for haptics, force feedback, or more advanced control   
+ - 🦾 Real-time teleoperation of a robotic hand   
+ - 🩺 Biomechanics-inspired tendon–ligament mechanism   
+ - 💵 Low-cost prototype using accessible materials   
+ - 💫 Expandable for haptics, force feedback, or more advanced control   
 
 ## ⚙️ How It Works
 
@@ -23,16 +23,16 @@ ReFlex is a **teleoperated robotic hand** project where a wooden hand mimics the
 This allows the wooden hand to **mirror human finger biomechanics in real time**.
 
 ## 🧰 Materials
-  Arduino Uno 
-  Flex Sensors  
-  Work Glove  
-  IKEA Wooden Hand  
-  Stepper Motors & Drivers  
-  Jumper Wires   
-  Electric Tape  
-  String  
-  Elastic Bands   
-  Hot Glue   
-  Paper Straw   
-  Zip-tie   
+  - Arduino Uno 
+  - Flex Sensors  
+  - Work Glove  
+  - IKEA Wooden Hand  
+  - Stepper Motors & Drivers  
+  - Jumper Wires   
+  - Electric Tape  
+  - String  
+  - Elastic Bands   
+  - Hot Glue   
+  - Paper Straw   
+  - Zip-tie   
   
