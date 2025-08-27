@@ -24,8 +24,8 @@ This allows the wooden hand to **mirror human finger biomechanics in real time**
   Jumper Wires   
   Electric Tape  
   String  
-  Elastic Bands
-  Hot Glue
-  Paper Straw
-  Zip-tie
+  Elastic Bands   
+  Hot Glue   
+  Paper Straw   
+  Zip-tie   
   
