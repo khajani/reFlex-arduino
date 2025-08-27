@@ -3,10 +3,10 @@ ReFlex is a **teleoperated robotic hand** project where a wooden hand mimics the
 
 ## 🚀 Features
  
--🦾 Real-time teleoperation of a robotic hand   
--🩺 Biomechanics-inspired tendon–ligament mechanism   
--💵 Low-cost prototype using accessible materials   
--💫 Expandable for haptics, force feedback, or more advanced control   
+ -🦾 Real-time teleoperation of a robotic hand   
+ -🩺 Biomechanics-inspired tendon–ligament mechanism   
+ -💵 Low-cost prototype using accessible materials   
+ -💫 Expandable for haptics, force feedback, or more advanced control   
 
 ## ⚙️ How It Works
 
