@@ -45,9 +45,9 @@ The system involves two main parts:
 - Flex sensor + 10 kΩ resistor form voltage divider configuration   
   - Ratio of the flex sensor resistance to the total resistance determins Vout in Arduino analog pin   
   - <img width="295" height="86" alt="image" src="https://github.com/user-attachments/assets/dfcecd2a-2d58-480f-abeb-206eb3164931" />  
-     -  Flat finger → sensor low resistance → voltage at analog pin higher   
-     -  Bent finger → sensor higher resistance → voltage at analog pin lower   
-     -  The Arduino reads this voltage change and interprets it as finger movement   
+    -  Flat finger → sensor low resistance → voltage at analog pin higher   
+    -  Bent finger → sensor higher resistance → voltage at analog pin lower   
+    -  The Arduino reads this voltage change and interprets it as finger movement   
 
 **✋ Hand Circuit:**
 
