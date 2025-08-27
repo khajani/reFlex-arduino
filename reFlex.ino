@@ -11,13 +11,13 @@ Stepper stepper(STEPS_PER_REV, IN1, IN3, IN2, IN4);
 // --- Flex sensor setup ---
 const int FLEX_PIN = A0;
 int flexValue = 0;
-int prevFlexValue = 0;
+int prevFlexStep = 0;
 
 // --- Mapping values ---
-const int FLEX_MIN = 11;    // straight finger
-const int FLEX_MAX = 640;   // fully bent finger
-const int STEP_MIN = 0;     // stepper position when finger open
-const int STEP_MAX = 50;    // adjust if your finger needs more steps
+const int FLEX_MIN = 11;      // straight finger
+const int FLEX_MAX = 640;     // fully bent finger
+const int STEP_MIN = 0;       // finger fully open
+const int STEP_MAX = 6800;    // 20-second equivalent rotation
 
 void setup() {
   Serial.begin(9600);
@@ -31,9 +31,9 @@ void loop() {
   // 2. Constrain to safe range
   flexValue = constrain(flexValue, FLEX_MIN, FLEX_MAX);
 
-  // 3. Filter small random fluctuations
-  if (abs(flexValue - prevFlexValue) < 5) {
-    flexValue = prevFlexValue;
+  // 3. Filter small fluctuations
+  if (abs(flexValue - prevFlexStep) < 5) {
+    flexValue = prevFlexStep;
   }
 
   // 4. Map sensor value to stepper steps
@@ -43,14 +43,14 @@ void loop() {
   targetStep = constrain(targetStep, STEP_MIN, STEP_MAX);
 
   // 6. Move stepper incrementally
-  int stepDiff = targetStep - prevFlexValue;
+  int stepDiff = targetStep - prevFlexStep;
   if (stepDiff != 0) {
-    stepper.step(stepDiff);  // move forward or backward
-    prevFlexValue = targetStep;
+    stepper.step(stepDiff);
+    prevFlexStep = targetStep;
   }
 
   Serial.print("Flex: "); Serial.print(flexValue);
-  Serial.print(" | Step: "); Serial.println(prevFlexValue);
+  Serial.print(" | Step: "); Serial.println(prevFlexStep);
 
-  delay(20);  // small delay for smooth motion
+  delay(20);  // smooth motion
 }
