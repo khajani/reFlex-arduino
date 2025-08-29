@@ -1,6 +1,8 @@
 # 🦾 ReFlex: The Teleoperated Hand 
 ReFlex is a **teleoperated robotic hand** project where a wooden hand mimics the real-time finger movements of the user. By wearing a sensor glove equipped with **flex sensors**, the bending of each finger is captured and translated into proportional movements of the wooden hand. The hand uses a **string–elastic tendon system**, inspired by **human biomechanics**, that mimics the how tendons pull fingers closed and ligaments restore them
 
+https://github.com/user-attachments/assets/f3a22eb1-46af-4bfc-933b-caa67ac1c6d1
+
 ## 🚀 Features
  
  - 🦾 **Real-time teleoperation** of a robotic hand   
