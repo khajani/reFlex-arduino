@@ -1,6 +1,6 @@
 #include <Stepper.h>
 
-// --- Stepper setup ---
+// Stepper setup
 const int STEPS_PER_REV = 2048;  // 28BYJ-48 half-step
 const int IN1 = 8;
 const int IN2 = 9;
@@ -8,16 +8,16 @@ const int IN3 = 10;
 const int IN4 = 11;
 Stepper stepper(STEPS_PER_REV, IN1, IN3, IN2, IN4);
 
-// --- Flex sensor setup ---
+// Flex sensor setup
 const int FLEX_PIN = A0;
 int flexValue = 0;
 int prevFlexStep = 0;
 
-// --- Mapping values ---
-const int FLEX_MIN = 11;      // straight finger
+// Mapping numbers
+const int FLEX_MIN = 11;      // neutral/straight finger
 const int FLEX_MAX = 640;     // fully bent finger
 const int STEP_MIN = 0;       // finger fully open
-const int STEP_MAX = 6800;    // 20-second equivalent rotation
+const int STEP_MAX = 6800;    // 20-second equivalent rotation from tests
 
 void setup() {
   Serial.begin(9600);
@@ -25,10 +25,10 @@ void setup() {
 }
 
 void loop() {
-  // 1. Read flex sensor
+  // 1. Read flex sensor value
   flexValue = analogRead(FLEX_PIN);
 
-  // 2. Constrain to safe range
+  // 2. Constrain into safe working range
   flexValue = constrain(flexValue, FLEX_MIN, FLEX_MAX);
 
   // 3. Filter small fluctuations
@@ -36,7 +36,7 @@ void loop() {
     flexValue = prevFlexStep;
   }
 
-  // 4. Map sensor value to stepper steps
+  // 4. Map sensor value with stepper steps
   int targetStep = map(flexValue, FLEX_MIN, FLEX_MAX, STEP_MIN, STEP_MAX);
 
   // 5. Constrain stepper movement
