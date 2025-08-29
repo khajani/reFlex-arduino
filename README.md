@@ -13,6 +13,9 @@ https://github.com/user-attachments/assets/f3a22eb1-46af-4bfc-933b-caa67ac1c6d1
 <img src="https://github.com/user-attachments/assets/400d0e0e-ecdc-4aea-8192-fb86611cae70" width="400"/>
 <img src="https://github.com/user-attachments/assets/afcf6eee-684b-4199-9a08-980d4d8219bd" width="400"/>
 
+Left: **Biomechanics-inspired tendon–ligament mechanism**  
+Right: Smaller-sized pulley for increased torque 
+
 ## ⚙️ How It Works
 
 1. The user wears a glove fitted with flex sensors on each finger
