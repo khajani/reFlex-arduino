@@ -66,6 +66,8 @@ Note: Stepper motor is not included and the driver type is different in this dra
 
 <img width="496" height="386" alt="image" src="https://github.com/user-attachments/assets/4ebefe4c-3e08-40a8-8423-2ff84644e2a0" />
 
+![IMG_8309](https://github.com/user-attachments/assets/9f52f063-0d38-463a-ac56-3bd293841769)
+
   
 ## 🔮 Future Improvements
 - Design a 3D-printed hand for higher dexterity and cleaner design
