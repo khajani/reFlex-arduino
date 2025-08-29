@@ -8,7 +8,10 @@ https://github.com/user-attachments/assets/f3a22eb1-46af-4bfc-933b-caa67ac1c6d1
  - 🦾 **Real-time teleoperation** of a robotic hand   
  - 🩺 **Biomechanics-inspired tendon–ligament mechanism**   
  - 💵 **Low-cost** prototype using accessible materials   
- - 💫 **Expandable** for haptics, force feedback, or more advanced control   
+ - 💫 **Expandable** for haptics, force feedback, or more advanced control
+
+<img src="https://github.com/user-attachments/assets/400d0e0e-ecdc-4aea-8192-fb86611cae70" width="400"/>
+<img src="https://github.com/user-attachments/assets/afcf6eee-684b-4199-9a08-980d4d8219bd" width="400"/>
 
 ## ⚙️ How It Works
 
