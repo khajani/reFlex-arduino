@@ -77,5 +77,5 @@ Note: Stepper motor is not included and the driver type is different in this dra
 ## 🔮 Future Improvements
 - Design a 3D-printed hand for higher dexterity and cleaner design
 - Improve finger actuation with stronger mechanism
-- Implement more stepper motors and flex sensors
+- Implement more stepper motors and flex sensors (since time-constraint did not allow)
 - Explore force feedback for haptics
